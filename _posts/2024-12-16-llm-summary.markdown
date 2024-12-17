@@ -9,7 +9,7 @@ categories: jekyll update
 
 ### 一、模型层面上的改进：
 
-目前主流LLM的架构为transformer decoder-only，少数为encoder-decoder架构（如GLM等）。
+主流LLM的架构为transformer decoder-only，少数为encoder-decoder架构（如GLM等）。
 主流架构下，针对**模型能力、超长上下文、训练推理加速**等实际需求，研究者提出很多在模型层面上的改进，其细分研究方向包括：
   - attention机制的改进：如group attention等
   - position embedding的改进：如RoPE等
@@ -18,7 +18,7 @@ categories: jekyll update
 
 ### 二、整体训练、推理框架：
 
-目前的训练、推理流程大多遵循OpenAI提出的一系列技术范式。
+现阶段训练、推理流程大多遵循OpenAI提出的一系列技术范式。
 1. 涉及的训练阶段有：pretrain、continue-train、multi-stage train、sft（instruct ft、chat）、RLHF等，每一阶段的重点在于：
   - 数据构造：方法如evol instruct等，目标在于构造多样化、高质量数据
   - 数据配比：需要综合考虑**逻辑性、instruct following能力、人类偏好**等方面，因此需要思考、实验数据混合方式
@@ -30,7 +30,7 @@ categories: jekyll update
 
 ### 三、主流模型的细节：
 
-目前闭源、开源优秀的工作有很多，有很多值得借鉴的点，从不同功能出发也可以分为：数学、代码类工作（更强的instruct following能力）；助手类工作（更强的推理能力）
+现有闭源、开源优秀的工作有很多，有很多值得借鉴的点，从不同功能出发也可以分为：数学、代码类工作（更强的推理能力）；助手类工作（更强的instruct following能力）
 
 1. 一些前沿的闭源工作包括：
   - 助手类：GPT系列（openai）、claude系列（anthropic）、gemini系列（google）
